@@ -1,0 +1,105 @@
+// 320px — 480px: Mobile devices
+// 481px — 768px: iPads, Tablets
+// 769px — 1024px: Small screens, laptops
+// 1025px — 1200px: Desktops, large screens
+// 1201px and more —  Extra large screens, TV
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --purple-dark: #892d9c;
+  --purple: #7e459b;
+  --purple-medium: #b382ba;
+  --purple-light: #debbdd;
+  --gray: #d4d4d4;
+  --gray-500: #767676;
+  --gray-900: #333333;
+  --navy-blue: #2d3277;
+  --blue: #21a5db;
+}
+
+html {
+  /* TABLET */
+  @media (max-width: 1080px) {
+    font-size: 93.75%;
+  }
+
+  /* MOBLIE */
+  @media (max-width: 728px) {
+    font-size: 87.5%;
+  }
+}
+
+body {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+body,
+input,
+textarea,
+select,
+button {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul{
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/* Swiper styles */
+.swiper-container {
+  width: 95%;
+  height: 100%;
+}
+
+.swiper-slide {
+  width: 90%;
+  height: 16rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+}
+
+.swiper-button-prev {
+  background-image: url('../../public/assets/img/bracket-left.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 2.5rem 0;
+}
+
+.swiper-button-next {
+  background-image: url('../../public/assets/img/bracket-right.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 2.5rem 0;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: transparent;
+}

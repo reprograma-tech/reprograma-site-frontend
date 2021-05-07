@@ -1,0 +1,317 @@
+.banner {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 730px;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  
+  @media (max-width: 414px)  {
+    background: url(../../../public/images/header-mobile.png) no-repeat center center;
+    height: 500px;
+  }
+}
+
+.bannerContent {
+  padding: 0 0 5% 8%;
+  max-width: 70vw;
+  color: #FFFFFF;
+
+  h1 {
+    font-weight: 900;
+    font-size: 4.5rem;
+    letter-spacing: 0.03rem;
+  }
+  
+  p {
+    font-family: "Lato", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 0.01rem;
+    line-height: 1.5;
+    width: 380px;
+    margin:1.5rem 0;
+  }
+}
+
+
+// @media only screen and (max-width: 414px)  {
+//   .header-meli>.headerTitle>h1 {
+//     font-size: 42px;
+//     padding-top: 35%;
+//     margin-bottom: 0;
+//     width: 315px;
+//     margin-top: 0;
+//   }
+//   header>div>h1 {
+//     font-size: 48px;
+//     padding-top: 1%;
+//     margin-bottom: 0;
+//     width: 300px;
+//   }
+// }
+// @media only screen and (max-width: 320px)  {
+//   header>div>h1 {
+//     font-size: 44px;
+//   }
+// }
+
+// @media only screen and (max-width: 320px)  {
+//   .headerNoturno>div>h1 {
+//     width: 275px;
+//   }
+// }
+
+
+// // header>div>p {
+// //   color: #FFFFFF;
+// //   font-family: 'LatoWeb';
+// //   font-size: 24px;
+// //   font-weight: 300;
+// //   letter-spacing: 0.166667px;
+// //   line-height: 35px;
+// // }
+// // @media only screen and (max-width: 414px)  {
+// //   header>div>p {
+// //     font-size: 18px;
+// //     line-height: 25px;
+// //     margin-top: 0;
+// //     margin-bottom: 15px;
+// //     width: 250px;
+// //   }
+// // }
+
+// .header {
+//   position: fixed;
+//   left: 0;
+//   margin: 0;
+//   right: 0;
+//   z-index: 10;
+//   max-height: 130px;
+// }
+
+// .header.scrolling {
+//   background-color: #7E459B;
+//   -webkit-transition: background-color 1000ms linear;
+//   -ms-transition: background-color 1000ms linear;
+//   transition: background-color 1000ms linear;
+// }
+
+// .header .brand {
+//   display: inline-block;
+//   font-size: 16px;
+// }
+// @media only screen and (max-width: 320px)  {
+//   .header .brand {
+//     display: none;
+//   }
+// }
+
+// .headerUl {
+//   float: right;
+//   list-style: none;
+//   margin-right: 78px;
+//   margin-top: 0;
+//   display: flex;
+// }
+// @media only screen and (max-width: 1090px)  {
+//   .headerUl {
+//     display: none;
+//   }
+// }
+
+// .hamburguer {
+//   position:absolute;
+//   outline:none;
+//   right:0;
+//   border:0;
+//   margin: 60px 8%;
+//   z-index:999;
+// }
+// @media only screen and (min-width: 1091px)  {
+//   .hamburguer {
+//     display: none;
+//   }
+// }
+// @media only screen and (max-width: 768px)  {
+//   .hamburguer {
+//     margin: 30px 5%;
+//   }
+// }
+// @media only screen and (max-width: 414px)  {
+//   .hamburguer {
+//     margin: 10px 3%;
+//     min-width: 50px;
+//   }
+// }
+// @media only screen and (max-width: 375px) {
+// .hamburguer {
+//     margin: 10px 1%;
+//   }
+// }
+
+// .bar1, .bar2, .bar3 {
+//   width: 32px;
+//   height: 3px;
+//   background-color: #ffffff;
+//   margin: 5px 0;
+//   transition-duration: 0.4s;
+// }
+// .mobileToggle .bar1 {
+//   transform: rotate(-45deg) translate(-3px, 3px);
+//   -webkit-transform: rotate(-45deg) translate(-3px, 3px);
+//   background:white;
+// }
+// .mobileToggle .bar2 {
+//   opacity: 0;
+// }
+// .mobileToggle .bar3 {
+//   transform: rotate(45deg) translate(-8px, -8px);
+//   -webkit-transform: rotate(45deg) translate(-8px, -8px);
+//   background:white;
+// }
+
+// .navMobile {
+//   position: absolute;
+//   background:#7E459B;
+//   opacity:0;
+//   visibility: hidden;
+//   width:100%;
+//   height: 280px;
+//   z-index:700;
+//   transition-duration:.5s;
+//   backface-visibility:none;
+//   text-align: center;
+//   line-height: 40px;
+//   top: 0;
+//   padding-top: 12%;
+//   font-weight: bold;
+//   font-size: 20px;
+// }
+// @media only screen and (min-width: 1091px)  {
+//   .navMobile {
+//     display: none;
+//   }
+// }
+
+// .mobile-open {
+//   visibility: visible;
+//   opacity:0.7;
+// }
+
+// .headerUl>li {
+//   color: #FFFFFF;
+//   display: inline-block;
+//   font-size: 21px;
+//   letter-spacing: 0.145833px;
+//   margin-right: 35px;
+//   margin-top: 70px;
+//   text-align: center;
+//   padding-top: 8px;
+//   cursor: pointer;
+// }
+// @media only screen and (max-width: 768px)  {
+//   .headerUl>li {
+//     margin-right: 8px;
+//     margin-top: 20px;
+//   }
+// }
+// @media only screen and (max-width: 620px)  {
+//   .headerUl>li {
+//     font-size: 16px;
+//   }
+// }
+
+// .brand {
+//   background: url(../../../public/images/logo-reprograma-reduzido.png) no-repeat;
+//   height: 49px;
+//   margin: 50px 8%;
+//   min-width: 178px;
+// }
+// @media only screen and (max-width: 768px)  {
+//   .brand {
+//     margin: 15px 4%;
+//   }
+// }
+// @media only screen and (max-width: 414px)  {
+//   .brand {
+//     margin: 10px 3%;
+//     min-width: 50px;
+//   }
+// }
+// @media only screen and (max-width: 375px) {
+// .brand {
+//     margin: 10px 1%;
+//   }
+// }
+
+// .brand.brandScroll {
+//   background: url(../../../public/images/logo-reprograma.png) no-repeat;
+//   margin: 50px 0 10px 8%;
+// }
+// @media only screen and (max-width: 768px)  {
+//   .brand.brandScroll {
+//     margin: 15px 0 10px 4%;
+//   }
+// }
+// @media only screen and (max-width: 414px)  {
+//   .brand.brandScroll {
+//     background: url(../../../public/images/logo-reprograma-reduzido.png) no-repeat;
+//     margin: 10px 0 10px 1%;
+//   }
+// }
+
+// .headerTitle{
+//   padding: 20% 0 0 8%;
+//   width: 400px;
+//   padding-bottom: 2%;
+// }
+// @media only screen and (min-width: 1920px)  {
+//   .headerTitle {
+//     padding: 15% 0 2% 8%;
+//   }
+// }
+// @media only screen and (max-width: 1024px)  {
+//   .headerTitle {
+//     padding: 30% 0 2% 8%;
+//   }
+// }
+// @media only screen and (max-width: 768px)  {
+//   .headerTitle {
+//     padding: 48% 0 2% 8%;
+//   }
+// }
+// @media only screen and (max-width: 414px)  {
+//   .headerTitle {
+//     padding: 40% 0 2% 8%;
+//     width: 330px;
+//   }
+// }
+// @media only screen and (max-width: 320px)  {
+//   .headerTitle {
+//     padding: 55% 0 2% 4%;
+//   }
+// }
+// .toggle {
+//   background-color: #7E459B;
+//   border-radius: 10px;
+// }
+// .submenu {
+//   width: 105px;
+//   opacity:0;
+//   transition-timing-function: ease-in;
+//   transition: 0.3s;
+// }
+
+// .submenu>a>p {
+//   font-family: 'LatoWeb';
+//   font-size: 14px;
+// }
+
+// .open {
+//   visibility: visible;
+//   opacity:.9;
+// }

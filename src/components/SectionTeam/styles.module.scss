@@ -1,0 +1,22 @@
+.sectionTeam{
+  margin: 6rem 12rem;
+  display: flex;
+  align-items: center;
+}
+
+
+.teamBlock{
+  padding: 4.5rem;
+
+  h3{
+    font-size: 2.75rem;
+    font-weight: 900;
+  }
+
+  p{
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-top: 1.25rem;
+    margin-bottom: 1.875rem;
+  }
+}
