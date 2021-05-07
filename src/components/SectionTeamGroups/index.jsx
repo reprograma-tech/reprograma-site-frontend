@@ -4,6 +4,24 @@ import { getImageUrl } from "../../utils/getImageUrl";
 export function SectionTeamGroups({ grupos }) {
   return (
     <>
+      <svg class="defs-only">
+        <filter
+          id="monochrome"
+          color-interpolation-filters="sRGB"
+          x="0"
+          y="0"
+          height="100%"
+          width="100%"
+        >
+          <feColorMatrix
+            type="matrix"
+            values="0.60 0 0 0 0.40 
+              0.87 0 0 0  0.13  
+              0.54 0 0 0  0.46 
+                0  0 0 1  0"
+          />
+        </filter>
+      </svg>
       <section className={styles.sectionTeamGroups}>
         {grupos.map((grupo) => (
           <div key={grupo.nomeGrupo} className={styles.group}>
@@ -13,14 +31,30 @@ export function SectionTeamGroups({ grupos }) {
                 <div
                   className={styles.card}
                   key={index}
-                  style={{
-                    backgroundImage: "url(" + getImageUrl(item.foto.url) + ")",
-                  }}
                 >
-                  <span className={styles.cardPlus}>+</span>
-                  <div>
-                    <p>{item.nome}</p>
-                    <span className={styles.function}>{item.funcao}</span>
+                  
+                  <div className={styles.cardFront}
+                    style={{
+                      backgroundImage: "url(" + getImageUrl(item.foto.url) + ")",
+                    }}
+                  >
+                    <span className={styles.colorLayer} />
+                    <span className={styles.cardPlus}>+</span>
+                    <div>
+                      <p>{item.nome}</p>
+                      <span className={styles.function}>{item.funcao}</span>
+                    </div>
+                  </div>
+                  <div className={styles.cardBack}>
+                    <p class="team-title">
+                      Contato:{" "}
+                      <a
+                        href="https://www.LinkedIn.com/in/mariel-reyes-milk-0a138663"
+                        target="_blank"
+                      >
+                        LinkedIn
+                      </a>
+                    </p>
                   </div>
                 </div>
               ))}
